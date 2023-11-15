@@ -33,7 +33,7 @@ class DashboardView extends GetView<HomeController> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'Welcome\nHome, ${controller.userName}',
+                    '欢迎\n主人, ${controller.userName}',
                     style: HomeFiTextTheme.kSubHeadTextStyle
                         .copyWith(color: Theme.of(context).primaryColorDark),
                   ),
@@ -59,7 +59,7 @@ class DashboardView extends GetView<HomeController> {
                   children: [
                     SizedBox(height: size.height * 0.02),
                     Text(
-                      'Rooms',
+                      '房间',
                       style: HomeFiTextTheme.kSub2HeadTextStyle
                           .copyWith(color: Theme.of(context).primaryColorDark),
                     ),
@@ -109,7 +109,7 @@ class DashboardView extends GetView<HomeController> {
                                       ConnectionState.waiting) {
                                 return TempHumidBanner(
                                   img: 'assets/icons/temperature.png',
-                                  title: 'Temperature',
+                                  title: '温度          ',
                                   horizontalPadding: Get.width * 0.046,
                                   child: SizedBox(
                                     child: CircularProgressIndicator(
@@ -128,7 +128,7 @@ class DashboardView extends GetView<HomeController> {
                                             .toInt();
                                 return TempHumidBanner(
                                   img: 'assets/icons/temperature.png',
-                                  title: 'Temperature',
+                                  title: '温度          ',
                                   horizontalPadding: Get.width * 0.046,
                                   child: Text(
                                     '$value°C',
@@ -151,7 +151,7 @@ class DashboardView extends GetView<HomeController> {
                                       ConnectionState.waiting) {
                                 return TempHumidBanner(
                                   img: 'assets/icons/humidity.png',
-                                  title: 'Humidity',
+                                  title: '湿度          ',
                                   horizontalPadding: Get.width * 0.044,
                                   child: SizedBox(
                                     child: CircularProgressIndicator(
@@ -170,7 +170,7 @@ class DashboardView extends GetView<HomeController> {
                                             .toInt();
                                 return TempHumidBanner(
                                   img: 'assets/icons/humidity.png',
-                                  title: 'Humidity',
+                                  title: '湿度          ',
                                   horizontalPadding: Get.width * 0.044,
                                   child: Text(
                                     '$value%',
@@ -190,7 +190,7 @@ class DashboardView extends GetView<HomeController> {
                     ),
                     SizedBox(height: size.height * 0.03),
                     Text(
-                      'Smart Systems',
+                      '智能 系统',
                       style: HomeFiTextTheme.kSub2HeadTextStyle
                           .copyWith(color: Theme.of(context).primaryColorDark),
                     ),
@@ -206,14 +206,14 @@ class DashboardView extends GetView<HomeController> {
                                 SmartSystem(
                                   color: GFTheme.lightPurple,
                                   index: 0,
-                                  title: 'LED Light',
+                                  title: 'LED 灯',
                                   imageUrl: 'assets/images/icons8-light-96.png',
                                   onTap: () {},
                                 ),
                                 SmartSystem(
                                   color: GFTheme.lightBlue,
                                   index: 1,
-                                  title: 'RGB LED',
+                                  title: 'RGB 灯',
                                   imageUrl:
                                       'assets/images/icons8-rgb-lamp-96.png',
                                   onTap: () {
@@ -229,7 +229,7 @@ class DashboardView extends GetView<HomeController> {
                                 SmartSystem(
                                   color: GFTheme.lightYellow,
                                   index: 2,
-                                  title: 'Music Player',
+                                  title: 'Music 播放器',
                                   imageUrl:
                                       'assets/images/icons8-music-record-96.png',
                                   onTap: () {},
@@ -237,7 +237,7 @@ class DashboardView extends GetView<HomeController> {
                                 SmartSystem(
                                   color: GFTheme.lightPeach,
                                   index: 3,
-                                  title: 'LED Light 2',
+                                  title: 'LED 灯2',
                                   imageUrl: 'assets/images/icons8-light-96.png',
                                   onTap: () {},
                                 ),

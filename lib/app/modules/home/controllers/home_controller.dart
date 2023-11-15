@@ -15,7 +15,7 @@ class HomeController extends GetxController {
   get currentIndex => this._currentIndex.value;
 
   // userData
-  String userName = 'Jobin';
+  String userName = 'Xuchao';
   bool isMale = true;
 
   // List of bools for selected room
@@ -30,11 +30,11 @@ class HomeController extends GetxController {
 
   // List of room data
   List<Room> rooms = [
-    Room(roomName: 'Living Room', roomImgUrl: 'assets/icons/sofa.svg'),
-    Room(roomName: 'Dining Room', roomImgUrl: 'assets/icons/chair.svg'),
-    Room(roomName: 'Bedroom', roomImgUrl: 'assets/icons/bed.svg'),
-    Room(roomName: 'Kitchen', roomImgUrl: 'assets/icons/kitchen.svg'),
-    Room(roomName: 'Bathroom', roomImgUrl: 'assets/icons/bathtub.svg'),
+    Room(roomName: '起居室', roomImgUrl: 'assets/icons/sofa.svg'),
+    Room(roomName: '餐厅', roomImgUrl: 'assets/icons/chair.svg'),
+    Room(roomName: '卧室', roomImgUrl: 'assets/icons/bed.svg'),
+    Room(roomName: '厨房', roomImgUrl: 'assets/icons/kitchen.svg'),
+    Room(roomName: '洗浴间', roomImgUrl: 'assets/icons/bathtub.svg'),
   ];
 
   List<bool> isToggled = [false, false, false, false];
